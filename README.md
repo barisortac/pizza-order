@@ -7,7 +7,11 @@ create project folder (name as you wish, here we say _pizzaorder_)
 `cd pizzaorder`
 
 clone project  
-`git clone git@github.com:brsrtc/pizza-order.git`
+`git clone git@github.com:brsrtc/pizza-order.git`  
+
+copy .env.example to .env   
+`cd pizza-order/pizzaorder/config`  
+`cp .env.example .env`  
 
 
 **TO RUN WITH DOCKER**  
@@ -25,10 +29,6 @@ activate virtualenv
 
 now you are in virtualenv, install dependencies (requirements)   
 `pip install -r requirements.txt`  
-
-copy .env.example to .env   
-`cd pizza-order/pizzaorder/config`  
-`cp .env.example .env`  
 
 edit POSTGRES env variables as you wish  
 (if you just use environment in example, 
