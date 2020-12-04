@@ -113,7 +113,7 @@ endpoint: `api/order/item/<pk>/`
 method: `delete`  
   
  
-###API Functionalities  
+### API Functionalities  
 **Create Order (order pizza):**  
 - Create pizza by desired flavor (margarita, marinara, salami), the number of pizzas and their size (small, medium, large).  
 - Give customer detail in order response.  
