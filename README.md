@@ -112,9 +112,27 @@ delete order item
 endpoint: `api/order/item/<pk>/`  
 method: `delete`  
   
+ 
+###API Functionalities
+**Create Order (order pizza):**  
+- Create pizza by desired flavor (margarita, marinara, salami), the number of pizzas and their size (small, medium, large).  
+- Give customer detail in order response.  
+- Track status of the order.    
+- Create order with the same flavor of pizza but with different sizes multiple times.  
+**Update order:**   
+- Update the order details by flavours, count, sizes  
+- Prevent order update if order status is not in prepared and received.  
+- Update status of delivery. 
+**Remove order:**  
+**Retrieve an order:**  
+- Get order by pk.    
+**List orders:**  
+- Get all order at once.
+- Filter orders by status and customer  
 
 
 ****Improvements for the project (TODO)****
+- [ ] Add Authentication
 - [ ] Add Swagger
 - [ ] Seperate item of OrderItem as an app (for desserts, drinks etc.)
 - [ ] Enable to add toppings for pizza
