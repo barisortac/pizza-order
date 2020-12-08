@@ -1,8 +1,7 @@
+from django.core.validators import MinValueValidator
 from django.db import transaction
 from rest_framework import serializers
-from rest_framework.compat import MinValueValidator
 from rest_framework.exceptions import NotAcceptable
-
 from customer.models import Customer
 from customer.serializers import validate_is_customer_active
 from .models import Order, OrderItem, OrderStatusEnum
